@@ -1,0 +1,40 @@
+/* Gototop.css */
+.top-btn {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    background-color: #2506ad; /* Replace theme reference with actual color */
+    box-shadow: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .top-btn--icon {
+    animation: gototop 1.1s linear infinite alternate-reverse;
+  }
+  
+  @keyframes gototop {
+    0% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(1rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .top-btn {
+      right: 0;
+      left: 40%;
+    }
+  }
+  

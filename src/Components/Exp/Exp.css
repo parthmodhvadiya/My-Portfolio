@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.experience {
+    margin-top: 0rem;
+    background-color: #fff;
+  }
+  .experience .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 6rem auto;
+  }
+  .experience .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: #020133;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 0;
+  }
+  .experience .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  /*circles on timeline*/
+  .experience .container::after {    
+    content: "\f0b1";
+    position: absolute;
+    line-height: 2.5rem;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #2506ad;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 1.89rem;
+    text-align: center;
+    font-weight: 600;
+    color:#02094b;
+    font-family: 'Font Awesome\ 5 Free';
+  }
+  .experience .left {
+    left: 0;
+  }
+  .experience .right {
+    left: 50%;
+  }
+  /* arrows pointing right */
+  .experience .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 29px;
+    border: medium solid #091479;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #091479;
+  }
+  /* arrows pointing left  */
+  .experience .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #091479;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #091479 transparent transparent;
+  }
+  .experience .right::after {
+    left: -16px;
+  }
+  .experience .content {
+    background-color: #091479;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  .experience .content .tag{
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 800;
+  }
+
+  .experience .content .tag h2{
+    font-weight: 800;
+    color: #fff;
+  }
+  .experience .content .desc{
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .experience .content .desc h3{
+    font-size: 1.7rem;
+    padding-bottom: 0.7rem;
+    font-weight: 600;
+    color: #f6da09;
+  }
+  .experience .content .desc p{
+    font-size: 1.3rem;
+    color: #fff;
+    
+  }
+  /* view all button */
+  .morebtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .morebtn .btn {
+    position: relative;
+    line-height: 0;
+    padding: 1.6rem 3rem;
+    border-radius: .5em;
+    transition: 0.5s;
+    color: #fff;
+    background: #091479;
+    text-align: center;
+  }
+  .morebtn .btn span {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  .morebtn .btn i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+  /* .morebtn .btn:hover{
+    background: linear-gradient(45deg, #18056b, #2a1780);
+  } */
+  .morebtn .btn:hover i {
+    transform: translateX(-8px);
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    .experience .timeline::after {
+    left: 31px;
+    }
+    .experience .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    .experience .container::before {
+    left: 60px;
+    border: medium solid #091479;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #091479 transparent transparent;
+    }
+    .experience .left::after {
+      left: 15px;
+    }
+    .experience .right::after {
+      left: 15px;
+    }
+    .experience .right {
+    left: 0%;
+    }
+    .experience .container::after {
+      font-size: 2rem;;
+    }
+  }
