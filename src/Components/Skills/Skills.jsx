@@ -75,19 +75,22 @@ function Skills() {
                         <img id="leetcode" src={leetcode} alt="leetcode"></img>
                             <h3>LeetCode</h3>
                             <p><span>400+</span> Problems Solved</p>
-                            <button className="profilebtn"><a href="https://leetcode.com/u/harshilkothiya/  " target="_blank"> View Profile</a>  <FontAwesomeIcon id="eye" icon={faArrowRight} /></button>
+                            <a href="https://leetcode.com/u/harshilkothiya/" target="_blank">
+                            <button className="profilebtn"> View Profile <FontAwesomeIcon id="eye" icon={faArrowRight} /></button></a>
                         </div>
                         <div className="coding-box" data-aos="zoom-in">
                         <img id="codechef" src={codechef} alt="leetcode"></img>
                             <h3>CodeChef</h3>
                             <p><span>100+</span> Problems Solved</p>
-                            <button className="profilebtn"><a href="https://www.codechef.com/users/harshilkothiya" target="_blank"> View Profile</a>  <FontAwesomeIcon id="eye" icon={faArrowRight} /></button>
+                            <a href="https://www.codechef.com/users/harshilkothiya" target="_blank">
+                            <button className="profilebtn"> View Profile <FontAwesomeIcon id="eye" icon={faArrowRight} /></button></a>
                         </div>
                         <div className="coding-box" data-aos="zoom-in">
                             <img src={gfg} alt="leetcode"></img>
                             <h3>GeeksforGeeks</h3>
                             <p><span>40+</span> Problems Solved</p>
-                            <button className="profilebtn"><a href="https://www.geeksforgeeks.org/user/harshilkhg17/" target="_blank"> View Profile</a> <FontAwesomeIcon id="eye" icon={faArrowRight} /></button>
+                            <a href="https://www.geeksforgeeks.org/user/harshilkhg17/" target="_blank">
+                            <button className="profilebtn"> View Profile <FontAwesomeIcon id="eye" icon={faArrowRight} /></button></a>
                         </div>
                     </div>
                 </div>
