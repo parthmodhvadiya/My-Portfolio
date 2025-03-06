@@ -11,16 +11,21 @@ function About() {
   const handleResumeClick = () => {
     const resumeUrl = "/resume.pdf"; // Resume file in 'public/' folder
     window.open(resumeUrl, "_blank"); // Open resume in a new tab
+
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = resumeUrl;
-      link.download = "Harshil_kothiya_Resume.pdf"; // Custom filename
+      link.download = "Harshil_Kothiya_Resume.pdf"; // Custom filename
+      document.body.appendChild(link); // Append to DOM to ensure it works on all browsers
       link.click();
+      document.body.removeChild(link); // Clean up
     }, 1000); // Delay download by 1 second (optional)
   };
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
   }, []);
+
   return (
     <>
       <section class="about" id="about">
@@ -40,10 +45,14 @@ function About() {
             <p data-aos="fade-down">
               I am a Data Scientist and Machine Learning Engineer based in
               Surat, India. I am pursuing my Information Technology degree from{" "}
-              <a href="https://www.charusat.ac.in/" target="_blank"> Charusat University.</a> I
-              am passionate about working with data, building predictive models,
-              and exploring machine learning and deep learning techniques. I
-              enjoy learning new things and improving my skills in data science.
+              <a href="https://www.charusat.ac.in/" target="_blank">
+                {" "}
+                Charusat University.
+              </a>{" "}
+              I am passionate about working with data, building predictive
+              models, and exploring machine learning and deep learning
+              techniques. I enjoy learning new things and improving my skills in
+              data science.
             </p>
 
             <div data-aos="fade-down" class="box-container">
