@@ -253,13 +253,13 @@ section:not(#home) #particles {
   z-index: 1;
 }
 .image img {
-  width: 74%;
+  width: 72.5%;
   margin-left: 6rem;
   border-radius: 50%; 
   z-index: 10;
   box-shadow: 0 2px 8px rgba(35, 33, 33, 0.3);
   cursor: pointer;
-  height: 470px;
+  height: 450px;
   border: 1px solid rgb(189, 210, 232);
 }
 /* .home .image img:hover {
