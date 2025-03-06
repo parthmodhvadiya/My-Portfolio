@@ -251,7 +251,6 @@ section:not(#home) #particles {
 .home .image {
   flex: 1 1 40rem;
   z-index: 1;
-  background-color: #f8f8f8;
 }
 .image img {
   width: 74%;
