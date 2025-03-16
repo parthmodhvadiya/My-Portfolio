@@ -253,13 +253,13 @@ section:not(#home) #particles {
   z-index: 1;
 }
 .image img {
-  width: 72.5%;
+  width: 36rem;
   margin-left: 6rem;
   border-radius: 50%; 
   z-index: 10;
   box-shadow: 0 2px 8px rgba(35, 33, 33, 0.3);
   cursor: pointer;
-  height: 450px;
+  height: 36rem;
   border: 1px solid rgb(189, 210, 232);
 }
 /* .home .image img:hover {
@@ -384,7 +384,7 @@ section:not(#home) #particles {
     
   }
   .home .content{
-    margin-top: -35px;
+    /* margin-top: -35px; */
     padding-top: 0px;
   }
   .home .btn {
@@ -402,11 +402,8 @@ section:not(#home) #particles {
   }
 
   .home .image img {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    height: auto;
+    width: 31rem;
+    margin:auto;
     border-radius: 50%;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
