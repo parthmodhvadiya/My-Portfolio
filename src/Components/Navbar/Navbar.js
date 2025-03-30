@@ -152,68 +152,67 @@ const scrollToTop = () => {
         </nav>
       </header>
       <section className="home" id="home">
-      <div className="particles-wrapper">
-        <ParticlesComponent id="particles" />
-      </div>
-        <div className="content">
-          <h2>
-            Hello,
-            <br /> I'm Harshil <span>Kothiya</span>
-          </h2>
-          <p>
-            I am into <span class="typing-text"></span>
-          </p>
-          <a href="#about" class="btn">
-            <span>About Me</span>
-            <FontAwesomeIcon id="button" icon={faArrowDown} />
-          </a>
-          <div class="socials">
-            <ul class="social-icons">
-              <li>
-                <a
-                  class="linkedin"
-                  aria-label="LinkedIn"
-                  href="https://www.linkedin.com/in/harshil-kothiya/"
-                  target="_blank"
-                >
-                 <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="github"
-                  aria-label="GitHub"
-                  href="https://github.com/Harshilkothiya"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="instagram"
-                  aria-label="Instagram"
-                  href="https://www.instagram.com/__harshil_03__/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="twitter"
-                  aria-label="Twitter"
-                  target="_blank"
-                  href="https://x.com/KothiyaHarshil"
-                >
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="particles-wrapper">
+          <ParticlesComponent id="particles" />
         </div>
-        <div class="image">
-          <img draggable="false" src={mine} alt="" />
+        <div className="content">
+          <div className="text-content">
+            <h2>
+              Hello, <br /> I'm Harshil <span>Kothiya</span>
+            </h2>
+            <p>
+              I am into <span className="typing-text"></span>
+            </p>
+            <a href="#about" className="btn">
+              <span>About Me</span>
+              <FontAwesomeIcon id="button" icon={faArrowDown} />
+            </a>
+            <div className="socials">
+              <ul className="social-icons">
+                <li>
+                  <a
+                    className="linkedin"
+                    aria-label="LinkedIn"
+                    href="https://www.linkedin.com/in/harshil-kothiya/"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="github"
+                    aria-label="GitHub"
+                    href="https://github.com/Harshilkothiya"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="instagram"
+                    aria-label="Instagram"
+                    href="https://www.instagram.com/__harshil_03__/"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="twitter"
+                    aria-label="Twitter"
+                    target="_blank"
+                    href="https://x.com/KothiyaHarshil"
+                  >
+                    <i className="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="animated-shape"></div>
         </div>
       </section>
     </>

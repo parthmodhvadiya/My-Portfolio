@@ -5,162 +5,284 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 .contact {
-    padding: 3rem 17%;
-    background: #e5ecfb;
+    padding: 5rem 17%;
+    background: #f8f9ff;
     min-height: 60vh;
-  }
-  .contact .container {
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232506ad' fill-opacity='0.03'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z'/%3E%3C/g%3E%3C/svg%3E"); */
+    opacity: 1;
+    z-index: 0;
+}
+
+.contact .container {
     max-width: 1050px;
     width: 100%;
-    background: #fff;
+    background: #ffffff;
     border-radius: 1.5rem;
     margin: 2rem 5rem;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  }
-  .contact .heading{
+    border: 1px solid rgba(37, 6, 173, 0.1);
+    position: relative;
+}
+
+.contact .heading {
     font-size: 3.5rem;
-  }
-  .contact .heading span{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    color: #333;
+}
+
+.contact .heading span {
     color: #2506ad;
-  }
-  .contact .container .content {
+    position: relative;
+}
+
+.contact .heading span::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #2506ad;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.contact .heading:hover span::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.contact .container .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 2rem;
-  }
-  .contact .content .image-box {
-    max-width: 60%;
-    margin-left: 4rem;
-  }
-  .contact .content .image-box img {
-    width: 100%;
-    height: 40rem;
+    padding: 4rem 3rem;
+    gap: 2rem;
+}
+
+.contact .content .image-box {
+    max-width: 50%;
+    margin-left: 2rem;
     position: relative;
-  }
-  .contact .content form {
+}
+
+.contact .content .image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.contact .content .image-box img:hover {
+    transform: translateY(-5px);
+}
+
+.contact .content form {
     font-family: "Open Sans", sans-serif;
     width: 45%;
-    margin-right: 3.5rem;
-  }
-  form .form-group {
+    margin-right: 2rem;
+}
+
+form .form-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .form-group .field {
-    height: 50px;
+    gap: 1.5rem;
+}
+
+.form-group .field {
+    height: 55px;
     display: flex;
     position: relative;
-    margin: 1rem;
+    margin: 0.5rem 0;
     width: 100%;
-  }
-  form i {
+}
+
+form i {
     position: absolute;
     top: 50%;
     left: 18px;
-    color: rgb(51, 51, 51);
-    font-size: 17px;
+    color: #2506ad;
+    font-size: 18px;
     pointer-events: none;
     transform: translateY(-50%);
-  }
-  form .field input,
-  form .message textarea {
+    transition: all 0.3s ease;
+}
+
+form .field input,
+form .message textarea {
     width: 100%;
     height: 100%;
     outline: none;
-    padding: 0 16px 0 48px;
+    padding: 0 20px 0 50px;
     font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #2506ad;
-    background: #e5ecfb;
-  }
-  .field input::placeholder,
-  .message textarea::placeholder {
-    color: rgb(51, 51, 51);
-  }
-  .field input:focus,
-  .message textarea:focus {
-    padding-left: 47px;
-    border: 2px solid #2506ad;
-  }
-  .field input:focus ~ i,
-  .message textarea:focus ~ i {
+    border-radius: 10px;
+    border: 2px solid rgba(37, 6, 173, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.field input::placeholder,
+.message textarea::placeholder {
+    color: #666;
+    font-weight: 400;
+}
+
+.field input:focus,
+.message textarea:focus {
+    border-color: #2506ad;
+    box-shadow: 0 0 0 4px rgba(37, 6, 173, 0.1);
+}
+
+.field input:focus ~ i,
+.message textarea:focus ~ i {
     color: #2506ad;
-  }
-  form .message {
+    transform: translateY(-50%) scale(1.1);
+}
+
+form .message {
     position: relative;
-    margin: 1rem;
+    margin: 0.5rem 0;
     width: 100%;
-  }
-  form .message i {
+}
+
+form .message i {
     top: 25px;
     font-size: 20px;
-    left: 15px;
-  }
-  form .message textarea {
-    min-height: 130px;
-    max-height: 230px;
+}
+
+form .message textarea {
+    min-height: 150px;
+    max-height: 250px;
     max-width: 100%;
     min-width: 100%;
-    padding: 12px 20px 0 48px;
-  }
-  form .message textarea::-webkit-scrollbar {
-    width: 0px;
-  }
-  form .button-area {
+    padding: 15px 20px 0 50px;
+    border-radius: 15px;
+}
+
+form .message textarea::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(37, 6, 173, 0.1);
+    border-radius: 5px;
+}
+
+form .message textarea::-webkit-scrollbar-thumb {
+    background: #2506ad;
+    border-radius: 5px;
+}
+
+form .button-area {
     display: flex;
-    float: right;
-    flex-direction: row-reverse;
-  }
-  .button-area button {
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.button-area button {
     color: #fff;
     border: none;
     outline: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     cursor: pointer;
-    border-radius: 5px;
-    padding: 13px 25px;
+    border-radius: 30px;
+    padding: 15px 35px;
     background: #2506ad;
-    box-shadow: 0px 2.5px 5px rgba(48, 68, 247, 0.6);
-    transition: 0.3s ease;
-    font-family: "Nunito", sans-serif;
-  }
-  .button-area button:hover {
-    background: #421cecf5;
-  }
-  .button-area span {
-    font-size: 17px;
-    padding: 1rem;
-    display: none;
-  }
-  .button-area button i {
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.button-area button:hover {
+    background: #1a047e;
+}
+
+.button-area button i {
     position: relative;
-    top: 6px;
+    top: 2px;
     left: 2px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: 0.3s;
     color: #fff;
-  }
-  .button-area button:hover i {
-    left: 8px;
-  }
-  /* contact section media queries starts */
-  @media (max-width: 900px) {
+}
+
+.button-area button:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 1200px) {
     .contact {
-      min-height: 70vh;
+        padding: 5rem 10%;
     }
+    
     .contact .container {
-      margin: 3rem 0 2rem 0;
+        margin: 2rem 2rem;
     }
+}
+
+@media (max-width: 900px) {
+    .contact {
+        padding: 4rem 5%;
+    }
+
+    .contact .container {
+        margin: 2rem 0;
+    }
+
     .contact .container .content {
-      padding: 18px 12px;
+        flex-direction: column-reverse;
+        padding: 2.5rem 1.5rem;
     }
+
     .contact .content .image-box {
-      display: none;
+        display: block;
+        max-width: 80%;
+        margin: 2rem auto;
     }
+
     .contact .content form {
-      width: 100%;
-      margin-right: 2rem;
+        width: 100%;
+        margin-right: 0;
     }
-  }
+
+    .contact .heading {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 3rem 1rem;
+    }
+
+    .contact .heading {
+        font-size: 2.4rem;
+    }
+
+    .contact .container .content {
+        padding: 2rem 1rem;
+    }
+
+    .contact .content .image-box {
+        max-width: 100%;
+    }
+
+    .button-area button {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 12px 0;
+    }
+}

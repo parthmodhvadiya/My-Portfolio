@@ -22,6 +22,13 @@ function About() {
     }, 1000); // Delay download by 1 second (optional)
   };
 
+  const handleHireMeClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
   }, []);
@@ -55,29 +62,42 @@ function About() {
               data science.
             </p>
 
-            <div data-aos="fade-down" class="box-container">
-              <div class="box">
-                <p>
-                  <span> Age: </span> 20
-                </p>
-                <p>
-                  <span> Phone : </span> +91 8469409852
-                </p>
-              </div>
-              <div class="box">
-                <p>
-                  <span> Email : </span> harshilkothiya5@gmail.com
-                </p>
-                <p>
-                  <span> Place : </span> Surat, India - 394107
-                </p>
-              </div>
+            <div data-aos="fade-down" className="box-container">
+                <div className="box">
+                    <p>
+                        <span>Age:</span>
+                        <i className="fas fa-cake-candles"></i>
+                        20
+                    </p>
+                    <p>
+                        <span>Phone:</span>
+                        <i className="fas fa-phone"></i>
+                        +91 8469409852
+                    </p>
+                </div>
+                <div className="box">
+                    <p>
+                        <span>Email:</span>
+                        <i className="fas fa-envelope"></i>
+                        harshilkothiya5@gmail.com
+                    </p>
+                    <p>
+                        <span>Place:</span>
+                        <i className="fas fa-location-dot"></i>
+                        Surat, India - 394107
+                    </p>
+                </div>
             </div>
+
             <div className="resumebtn">
-              <button className="btn" onClick={handleResumeClick}>
-                <span>Resume</span>
-                <FontAwesomeIcon id="rightarrow1" icon={faArrowRight} />
-              </button>
+                <button className="btn" onClick={handleResumeClick}>
+                    <span>Resume</span>
+                    <FontAwesomeIcon id="rightarrow1" icon={faArrowRight} />
+                </button>
+                <button className="btn" style={{ marginLeft: '2rem' }} onClick={handleHireMeClick}>
+                    <span>Hire Me</span>
+                    <FontAwesomeIcon id="rightarrow1" icon={faArrowRight} />
+                </button>
             </div>
           </div>
         </div>

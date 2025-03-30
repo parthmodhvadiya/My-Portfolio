@@ -1,139 +1,116 @@
 import React from "react";
 import "./Exp.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faBriefcase, 
+    faCalendarAlt, 
+    faBuilding,
+    faCode,
+    faArrowLeft
+} from '@fortawesome/free-solid-svg-icons';
 
-function Exp() {
-    useEffect(() => {
-                AOS.init({ duration: 1000, once: false });
-            }, []);
+const Exp = () => {
     return (
-        <>
-            <section className="experience" id="experience">
-                <h2 className="heading"><i className="fas fa-briefcase"></i> Experience</h2>
-                
-                <div className="timeline">
+        <section className="experience" id="experience">
+            <h2 className="heading">
+                <FontAwesomeIcon icon={faBriefcase} /> Work <span>Experience</span>
+            </h2>
+            
+            <p className="quote">
+                "Every experience makes you grow"
+            </p>
 
-                    <div className="container left">
-                        <div data-aos="fade-right" className="content">
-                            <div className="tag">
-                                <h2>Self Employed</h2>
+            <div className="experience-container">
+                <div className="experience-card" data-aos="fade-right">
+                    <div className="experience-header">
+                        <div className="experience-title">
+                            <h3>Data Scientist</h3>
+                            <div className="experience-company">
+                                <FontAwesomeIcon icon={faBuilding} />
+                                Self Employed
                             </div>
-                            <div className="desc">
-                                <h3>Data Scientist</h3>
-                                <p>Oct 2023 - present</p>
-                            </div>
+                        </div>
+                        <div className="experience-date">
+                            <FontAwesomeIcon icon={faCalendarAlt} />
+                            Oct 2023 - Present
                         </div>
                     </div>
-
-                    <div className="container right">
-                        <div data-aos="fade-left" className="content">
-                            <div className="tag">
-                                <h2>CLUMOSS</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>Web Developer | Internship</h3>
-                                <p>May 2024 - June 2024</p>
-                            </div>
-                        </div>
+                    <p className="experience-description">
+                        Working as a self-employed Data Scientist, focusing on implementing cutting-edge machine learning solutions
+                        and data analysis techniques to solve complex business problems.
+                    </p>
+                    <div className="experience-skills">
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Python</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Machine Learning</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Data Analysis</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Deep Learning</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />AI</span>
                     </div>
-
-                    <div className="container left">
-                        <div data-aos="fade-right" className="content">
-                            <div className="tag">
-                                <h2>Bharat Intern</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>Web Developer | Internship</h3>
-                                <p>Feb 2024 - March 2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* <div className="container right">
-                        <div className="content">
-                            <div className="tag">
-                                <h2>Mapstreak Flyseas</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>Web Developer | Internship</h3>
-                                <p>June 2021 - Dec 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container left">
-                        <div className="content">
-                            <div className="tag">
-                                <h2>The Spark Foundation</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>Website Developer | Internship</h3>
-                                <p>May 2021 - June 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container right">
-                        <div className="content">
-                            <div className="tag">
-                                <h2>The Spark Foundation</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>Mobile Application Developer | Internship</h3>
-                                <p>April 2021 - May 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container left">
-                        <div className="content">
-                            <div className="tag">
-                                <h2>Frshr Technologies</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>WordPress Developer | Internship</h3>
-                                <p>April 2021 - April 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container right">
-                        <div className="content">
-                            <div className="tag">
-                                <h2>WonderingBlog</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>Web Development & SEO | Internship</h3>
-                                <p>March 2021 - April 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container left">
-                        <div className="content">
-                            <div className="tag">
-                                <h2>Hacktoberfest 2020</h2>
-                            </div>
-                            <div className="desc">
-                                <h3>Contributor | Open Source Program</h3>
-                                <p>October 2020 - November 2020</p>
-                            </div>
-                        </div>
-                    </div> */}
-
                 </div>
 
-                <div data-aos="zoom-in" className="morebtn">
-                    <a href="/#home" className="btn">
-                        <i className="fas fa-arrow-left"></i>
-                        <span>Back to Home</span>
-                    </a>
+                <div className="experience-card" data-aos="fade-left">
+                    <div className="experience-header">
+                        <div className="experience-title">
+                            <h3>Web Developer</h3>
+                            <div className="experience-company">
+                                <FontAwesomeIcon icon={faBuilding} />
+                                CLUMOSS
+                            </div>
+                        </div>
+                        <div className="experience-date">
+                            <FontAwesomeIcon icon={faCalendarAlt} />
+                            May 2024 - June 2024
+                        </div>
+                    </div>
+                    <p className="experience-description">
+                        Completed an intensive web development internship, working on real-world projects
+                        and gaining hands-on experience with modern web technologies.
+                    </p>
+                    <div className="experience-skills">
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />React.js</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Node.js</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />MongoDB</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Express</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />JavaScript</span>
+                    </div>
                 </div>
-            </section>
-        </>
+
+                <div className="experience-card" data-aos="fade-right">
+                    <div className="experience-header">
+                        <div className="experience-title">
+                            <h3>Web Developer</h3>
+                            <div className="experience-company">
+                                <FontAwesomeIcon icon={faBuilding} />
+                                Bharat Intern
+                            </div>
+                        </div>
+                        <div className="experience-date">
+                            <FontAwesomeIcon icon={faCalendarAlt} />
+                            Feb 2024 - March 2024
+                        </div>
+                    </div>
+                    <p className="experience-description">
+                        Participated in an enriching internship program focused on web development,
+                        contributing to various projects and enhancing technical skills.
+                    </p>
+                    <div className="experience-skills">
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />HTML/CSS</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />JavaScript</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />React</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Bootstrap</span>
+                        <span className="skill-tag"><FontAwesomeIcon icon={faCode} />Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <div className="back-btn" data-aos="fade-up">
+                <a href="/#home">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </section>
     );
-}
+};
 
 export default Exp;

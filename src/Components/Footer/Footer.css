@@ -4,111 +4,223 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-.footer{
-  font-family: "Open Sans", sans-serif;
-  min-height: auto;
-  padding-top: 0;
-  background: rgb(0, 1, 43);
-  margin-bottom: -20px;
-  width: 100vw;
+.footer {
+    font-family: 'Ubuntu', sans-serif;
+    min-height: auto;
+    padding: 4rem 0 2rem 0;
+    background: linear-gradient(to right, #020024, #02094b, #020024);
+    position: relative;
+    overflow: hidden;
 }
-.footer .box-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
 }
-.footer .box-container .box{
-  flex: 1 1 25rem;
-  margin: 2rem;
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding: 0 5%;
+    position: relative;
 }
-.footer .box-container .box h3{
-  font-size: 2.8rem;
-  color: #fff;
-  padding-bottom: 1rem;
-  font-weight: normal;
+
+.footer .box-container .box {
+    margin: 0;
 }
-.footer .box-container .box p{
-  text-align: justify;
-  font-size: 1.5rem;
-  color: #ccc;
-  padding: .7rem 0;
-  text-transform: none;
+
+.footer .box-container .box h3 {
+    font-size: 2.8rem;
+    color: #fff;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    margin-bottom: 1.5rem;
 }
-.footer .box-container .box p i{
-  padding-right: 1rem;
-  color: #ffae00;
+
+.footer .box-container .box h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #ffae00;
+    transition: width 0.3s ease;
 }
-.footer .box-container .box a{
-  font-size: 1.5rem;
-  color: rgb(238, 238, 238);
-  padding: .3rem 0;
-  display: block;
-  transition: color 0.5s ease-in-out; 
+
+.footer .box-container .box:hover h3::after {
+    width: 80px;
 }
-.footer .box-container .box a:hover{
-  
-  color: #ffae00;
+
+.footer .box-container .box p {
+    font-size: 1.6rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
 }
-.footer .box-container .box .share{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 0;
+
+.footer .box-container .box p i {
+    padding-right: 1rem;
+    color: #ffae00;
+    transition: transform 0.3s ease;
 }
-.footer .box-container .box .share a{
-  height: 4rem;
-  width: 4rem;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 5rem;
-  font-size: 2rem;
-  margin-right: 2rem;
-  transition: all 0.3s ease-in-out;
-  background: rgb(230, 230, 230);
-  color: #02094b;
-  border: none;
+
+.footer .box-container .box p:hover i {
+    transform: translateX(5px);
 }
-.footer .box-container .box .share a:hover{
-  background: transparent;
-  transform: scale(0.98);
-  border: .1rem solid rgb(180, 178, 178);
-  color: #ffae00;
+
+.footer .box-container .box a {
+    font-size: 1.6rem;
+    color: #e0e0e0;
+    padding: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
 }
-.footer .credit{
-  padding: 1rem 0 0 0;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: 'Nunito',sans-serif;
-  font-weight: 600;
-  color: #fff;
-  border-top: .1rem solid #fff3;
+
+.footer .box-container .box a i {
+    color: #ffae00;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
 }
-.footer .credit a{
-  color: #ffae00;
+
+.footer .box-container .box a:hover {
+    color: #ffae00;
+    transform: translateX(5px);
 }
-.footer .fa{
-    color: #E90606;
-    margin: 0 .3rem;
-    font-size: 1.5rem;
-    animation: pound .35s infinite alternate;
+
+.footer .box-container .box a:hover i {
+    transform: rotate(360deg);
 }
-@-webkit-keyframes pound{
-  to{
-    transform: scale(1.1);
-  }
+
+.footer .box-container .box .share {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
-@keyframes pound{
-  to{
-    transform: scale(1.1);
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
+
+.footer .box-container .box .share a:hover {
+    background: #ffae00;
+    border-color: #ffae00;
+    color: #020024;
+    transform: translateY(-5px);
 }
-@media(max-width:450px){
-  .footer .box-container .box{
-    margin: 2rem;
-  }
-  .footer .box-container .box p{
-    padding: 0.7rem;
-  }
-  .footer .box-container .box .share a{
-    padding: 1.1rem;
-  }
+
+.footer .credit {
+    text-align: center;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e0e0e0;
+    letter-spacing: 0.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .credit a {
+    color: #ffae00;
+    transition: color 0.3s ease;
+}
+
+.footer .credit a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 1.5rem 0;
+    }
+
+    .footer .box-container {
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 2.4rem;
+    }
+
+    .footer .box-container .box p,
+    .footer .box-container .box a {
+        font-size: 1.4rem;
+    }
+
+    .footer .box-container .box .share a {
+        height: 3.5rem;
+        width: 3.5rem;
+        font-size: 1.6rem;
+    }
+
+    .footer .credit {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer .box-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer .box-container .box {
+        text-align: center;
+    }
+
+    .footer .box-container .box h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer .box-container .box p,
+    .footer .box-container .box a {
+        justify-content: center;
+    }
+
+    .footer .box-container .box .share {
+        justify-content: center;
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 2.2rem;
+    }
+
+    .footer .box-container .box p,
+    .footer .box-container .box a {
+        font-size: 1.3rem;
+    }
+
+    .footer .box-container .box .share a {
+        height: 3.2rem;
+        width: 3.2rem;
+        font-size: 1.4rem;
+    }
+
+    .footer .credit {
+        font-size: 1.2rem;
+    }
 }
