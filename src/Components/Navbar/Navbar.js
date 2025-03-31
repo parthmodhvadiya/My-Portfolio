@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Typed from "typed.js"
 import mine from "../../assets/mine.png";
-import ParticlesComponent from "../Particles/Particles";
+// import ParticlesComponent from "../Particles/Particles";
 // import mine1 from "../../assets/mine1.jpg";
 
 function Navbar() {
@@ -152,9 +152,7 @@ const scrollToTop = () => {
         </nav>
       </header>
       <section className="home" id="home">
-        <div className="particles-wrapper">
-          <ParticlesComponent id="particles" />
-        </div>
+        
         <div className="content">
           <div className="text-content">
             <h2>
