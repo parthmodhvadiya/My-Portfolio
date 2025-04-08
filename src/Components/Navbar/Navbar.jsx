@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin, faTelegram, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faTelegram, faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Typed from "typed.js"
-import mine from "../../assets/mine.png";
+// import mine from "../../assets/mine.png";
 // import ParticlesComponent from "../Particles/Particles";
 // import mine1 from "../../assets/mine1.jpg";
 
@@ -70,15 +70,15 @@ const scrollToTop = () => {
   useEffect(() => {
     const typed = new Typed(".typing-text", {
       strings: [
+        "Full stack Development",
+        "Frontend Development",
+        "Backend Development",
+        "Python Developer",
         "Data Science",
         "Data Analysis",
         "Machine Learning",
         "Deep Learning",
         "NLP",
-        "GAN AI",
-        "Python Developer",
-        "Backend Development",
-        "Full stack Development"
       ],
       loop: true,
       typeSpeed: 50,
@@ -115,7 +115,7 @@ const scrollToTop = () => {
       {/* Navbar */}
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <a href="/" className="logo">
-          Harshil
+        Parth Modhvadiya
         </a>
         <FontAwesomeIcon
           id="menu"
@@ -156,7 +156,7 @@ const scrollToTop = () => {
         <div className="content">
           <div className="text-content">
             <h2>
-              Hello, <br /> I'm Harshil <span>Kothiya</span>
+              Hello, <br /> I'm Parth <span>Modhvadiya</span>
             </h2>
             <p>
               I am into <span className="typing-text"></span>
@@ -171,7 +171,7 @@ const scrollToTop = () => {
                   <a
                     className="linkedin"
                     aria-label="LinkedIn"
-                    href="https://www.linkedin.com/in/harshil-kothiya/"
+                    href="https://www.linkedin.com/in/parth-modhvadiya/"
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faLinkedin} />
@@ -181,7 +181,7 @@ const scrollToTop = () => {
                   <a
                     className="github"
                     aria-label="GitHub"
-                    href="https://github.com/Harshilkothiya"
+                    href="https://github.com/parthmodhvadiya"
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faGithub} />
@@ -189,22 +189,13 @@ const scrollToTop = () => {
                 </li>
                 <li>
                   <a
-                    className="instagram"
-                    aria-label="Instagram"
-                    href="https://www.instagram.com/__harshil_03__/"
+                    className="leetcode"
+                    aria-label="Leetcode"
+                    href="https://leetcode.com/u/Parth1197/"
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="twitter"
-                    aria-label="Twitter"
-                    target="_blank"
-                    href="https://x.com/KothiyaHarshil"
-                  >
-                    <i className="fa-brands fa-twitter"></i>
+                    {/* <FontAwesomeIcon icon={faLeetco} /> */}
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-leetcode-3521542-2944960.png?f=avif&w=30" alt="#leetcode" />
                   </a>
                 </li>
               </ul>

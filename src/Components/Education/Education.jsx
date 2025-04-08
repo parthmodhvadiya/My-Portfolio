@@ -4,7 +4,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import cspit from "../../assets/cspit.jpeg";
-import ssgv from "../../assets/ssgv.jpeg"; // Assuming you need this image
+import ssgv from "../../assets/dream.jpg"; // Assuming you need this image
 
 function Education() {
   useEffect(() => {
@@ -39,7 +39,17 @@ function Education() {
             </div>
             <div className="content">
               <h3>HSC Science | Informatics Practices</h3>
-              <p>Shree Swaminarayan Gurukul, Surat | GSEB</p>
+              <p>Dream International School, Dhoraji | GSEB</p>
+              <h4>2020-2022 | Completed</h4>
+            </div>
+          </div>
+          <div data-aos="fade-down" className="box">
+            <div className="image">
+              <img draggable="false" src={ssgv} alt="ssgv" />
+            </div>
+            <div className="content">
+              <h3>SSC Science | Informatics Practices</h3>
+              <p>Dream International School, Dhoraji | GSEB</p>
               <h4>2020-2022 | Completed</h4>
             </div>
           </div>

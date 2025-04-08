@@ -15,7 +15,7 @@ function About() {
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = resumeUrl;
-      link.download = "Harshil_Kothiya_Resume.pdf"; // Custom filename
+      link.download = "Parth_Modhvadiya_Resume.pdf"; // Custom filename
       document.body.appendChild(link); // Append to DOM to ensure it works on all browsers
       link.click();
       document.body.removeChild(link); // Clean up
@@ -45,21 +45,17 @@ function About() {
             <img draggable="false" class="tilt" src={about} alt="" />
           </div>
           <div class="content">
-            <h3 data-aos="fade-down">I'm Harshil Kothiya</h3>
+            <h3 data-aos="fade-down">I'm Parth Modhvadiya</h3>
             <span data-aos="fade-down" class="tag">
-              Data Scientist
+              Full Stack Web Development
             </span>
             <p data-aos="fade-down">
-              I am a Data Scientist and Machine Learning Engineer based in
-              Surat, India. I am pursuing my Information Technology degree from{" "}
+            I am a MERN Stack Developer based in Surat, India, currently pursuing a degree in Information Technology at 
               <a href="https://www.charusat.ac.in/" target="_blank">
                 {" "}
                 Charusat University.
               </a>{" "}
-              I am passionate about working with data, building predictive
-              models, and exploring machine learning and deep learning
-              techniques. I enjoy learning new things and improving my skills in
-              data science.
+              I’m passionate about building full-stack web applications, working with modern JavaScript frameworks, and exploring backend technologies. I enjoy learning new tools, solving real-world problems through code, and continuously improving my web development skills.
             </p>
 
             <div data-aos="fade-down" className="box-container">
@@ -72,19 +68,19 @@ function About() {
                     <p>
                         <span>Phone:</span>
                         <i className="fas fa-phone"></i>
-                        +91 8469409852
+                        +91 9974171197
                     </p>
                 </div>
                 <div className="box">
                     <p>
                         <span>Email:</span>
                         <i className="fas fa-envelope"></i>
-                        harshilkothiya5@gmail.com
+                        parthmodhvadiya15@gmail.com
                     </p>
                     <p>
                         <span>Place:</span>
                         <i className="fas fa-location-dot"></i>
-                        Surat, India - 394107
+                        Porbandar, India - 360575
                     </p>
                 </div>
             </div>

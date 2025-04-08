@@ -58,7 +58,7 @@ html::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: space-between;
   padding: 1.7rem 10%;
-  height: 6.5rem;
+  height: 8.5rem;
   background: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
@@ -97,6 +97,7 @@ section {
   font-family: "PT Sans", sans-serif;
   margin-left: 3.5rem;
   position: relative;
+  color: white;
   padding: 0.5rem 0;
 }
 

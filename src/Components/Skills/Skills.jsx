@@ -58,7 +58,7 @@ function Skills() {
 
     const fetchLeetCodeStats = async () => {
         try {
-            const response = await axios.get('https://leetcode-stats-api.herokuapp.com/harshilkothiya');
+            const response = await axios.get('https://leetcode-stats-api.herokuapp.com/Parth1197');
             if (response.data) {
                 setLeetcodeStats({
                     totalSolved: response.data.totalSolved || '400+',
@@ -109,7 +109,7 @@ function Skills() {
     const fetchGFGStats = async () => {
         try {
             // Using a different API endpoint for GFG
-            const response = await axios.get('https://api.geeksforgeeks.org/api/v1/user/harshilkhg17/');
+            const response = await axios.get('https://api.geeksforgeeks.org/api/v1/user/parthmodhgy21/');
             if (response.data) {
                 setGfgStats({
                     problemsSolved: response.data.solved || '40+',
@@ -205,7 +205,7 @@ function Skills() {
                         </div>
 
                         <div className="stat-footer">
-                            <a href="https://leetcode.com/harshilkothiya/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://leetcode.com/u/Parth1197/" target="_blank" rel="noopener noreferrer">
                                 <button className="profilebtn">View Profile <FontAwesomeIcon icon={faArrowRight} /></button>
                             </a>
                         </div>
@@ -233,7 +233,7 @@ function Skills() {
                         </div>
 
                         <div className="stat-footer">
-                            <a href="https://www.codechef.com/users/harshilkothiya" target="_blank" rel="noopener noreferrer">
+                            <a href="https://leetcode.com/u/Parth1197/" target="_blank" rel="noopener noreferrer">
                                 <button className="profilebtn">View Profile <FontAwesomeIcon icon={faArrowRight} /></button>
                             </a>
                         </div>
@@ -260,7 +260,7 @@ function Skills() {
                         </div>
 
                         <div className="stat-footer">
-                            <a href="https://www.geeksforgeeks.org/user/harshilkhg17/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.geeksforgeeks.org/user/parthmodhgy21/" target="_blank" rel="noopener noreferrer">
                                 <button className="profilebtn">View Profile <FontAwesomeIcon icon={faArrowRight} /></button>
                             </a>
                         </div>

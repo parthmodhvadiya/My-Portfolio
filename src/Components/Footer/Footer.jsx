@@ -9,7 +9,7 @@ function Footer() {
         <section className="footer">
             <div className="box-container">
                 <div className="box">
-                    <h3>Harshil's Portfolio</h3>
+                    <h3>Parth's Portfolio</h3>
                     <p>
                         Thank you for visiting my portfolio! Connect with me to explore opportunities 
                         and turn innovative ideas into reality. Let's create something amazing together!
@@ -54,15 +54,15 @@ function Footer() {
 
                 <div className="box">
                     <h3>Contact Info</h3>
-                    <p><i className="fas fa-phone"></i> +91 8469409852</p>
-                    <p><i className="fas fa-envelope"></i> harshilkothiya5@gmail.com</p>
-                    <p><i className="fas fa-map-marker-alt"></i> Surat, India-394107</p>
+                    <p><i className="fas fa-phone"></i> +91 9974171197</p>
+                    <p><i className="fas fa-envelope"></i> parthmodhvadiya15@gmail.com</p>
+                    <p><i className="fas fa-map-marker-alt"></i> Porbandar, India-394107</p>
                     <p><i className="fas fa-clock"></i> Available for freelance</p>
                 </div>
             </div>
 
             <div className="credit">
-                <p>© {currentYear} Harshil Kothiya. All rights reserved. Built with <i className="fas fa-heart"></i> and React.js</p>
+                <p>© {currentYear} Parth Modhvadiya. All rights reserved. Built with <i className="fas fa-heart"></i> and React.js</p>
             </div>
         </section>
     );

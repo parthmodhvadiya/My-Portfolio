@@ -18,89 +18,7 @@ const Exp = () => {
 
       <p className="quote">"Every experience makes you grow"</p>
 
-      <div className="experience-container">
-        <div className="experience-card" data-aos="fade-right">
-          <div className="experience-header">
-            <div className="experience-title">
-              <h3>Data Scientist</h3>
-              <div className="experience-company">
-                <FontAwesomeIcon icon={faBuilding} />
-                Self Employed
-              </div>
-            </div>
-            <div className="experience-date">
-              <FontAwesomeIcon icon={faCalendarAlt} />
-              Oct 2023 - Present
-            </div>
-          </div>
-          <p className="experience-description">
-            Working as a self-employed Data Scientist, focusing on implementing
-            cutting-edge machine learning solutions and data analysis techniques
-            to solve complex business problems.
-          </p>
-          <div className="experience-skills">
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              Python
-            </span>
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              Machine Learning
-            </span>
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              Data Analysis
-            </span>
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              Deep Learning
-            </span>
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              AI
-            </span>
-          </div>
-        </div>
-
-        <div className="experience-card" data-aos="fade-left">
-          <div className="experience-header">
-            <div className="experience-title">
-              <h3>DoseHack’24 Hackathon</h3>
-              <div className="experience-company">
-                <FontAwesomeIcon icon={faBuilding} />
-                Charotar University, Gujarat
-              </div>
-            </div>
-            <div className="experience-date">
-              <FontAwesomeIcon icon={faCalendarAlt} />
-              25-26 Sep 2024
-            </div>
-          </div>
-          <p className="experience-description">
-            In DoseHack’24, where I developed autonomous warehouse bots to
-            enhance operational efficiency and reduce human error. <br />Showcased the potential of AI/ML in revolutionizing warehouse operations.
-          </p>
-
-          <div className="experience-skills">
-          <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              Problem Solving
-            </span>
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              AI
-            </span>
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              Machine Learning
-            </span>
-            <span className="skill-tag">
-              <FontAwesomeIcon icon={faCode} />
-              Python
-            </span>
-          </div>
-        </div>
-
+      <div className="experience-container"> 
         <div className="experience-card" data-aos="fade-left">
           <div className="experience-header">
             <div className="experience-title">
@@ -116,7 +34,7 @@ const Exp = () => {
             </div>
           </div>
           <p className="experience-description">
-            Developing a deep learning-based classification model to accurately
+            Developed a deep learning-based classification model to accurately
             categorize white blood cells (WBCs) into five critical types
           </p>
           <div className="experience-skills">
@@ -137,7 +55,7 @@ const Exp = () => {
               <h3>Web Developer</h3>
               <div className="experience-company">
                 <FontAwesomeIcon icon={faBuilding} />
-                CLUMOSS
+                Infonium Technologies
               </div>
             </div>
             <div className="experience-date">

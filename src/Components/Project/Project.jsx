@@ -1,12 +1,8 @@
 import React from "react";
 import "./Project.css";
-import sport from "../../assets/sc.png";
 import datavis from "../../assets/datavis.png"
-import rul from "../../assets/RUL.png"
-import farm from "../../assets/farm.png"
-import ipl from "../../assets/ipl.png"
+import e_commerce from "../../assets/e-commerce.png"
 import hotel1 from "../../assets/hotel1.png"
-import bangalore from "../../assets/home.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -18,53 +14,40 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
-    image:rul,
+    image:e_commerce,
     description:
-      "Deepl learning Project to predict the Remaining Useful Life of Jet Engine.",
-    link: "https://github.com/Harshilkothiya/Remaining-Useful-Life-RUL-of-Jet-Engine.git",
-    title: "Remaining Useful Life of Jet Engine",
+      "A modern and responsive e-commerce website built with React, offering seamless shopping, secure authentication, and smooth user experience.",
+    link: "https://github.com/parthmodhvadiya/E-commerce-website/tree/master",
+    title: "E-commerce Website",
   },
-  {
-    image:farm,
-    description:
-      "An intelligent farming solution optimizing crop management through data-driven insights.",
-    link: "https://github.com/Harshilkothiya/FarmSmart-Crop-Recommendation",
-    title: "FarmSmart Crop Recommendation",
-  },
-  {
-    image:ipl,
-    description:
-      "Predict the probability of win of Team based on current state.",
-    link: "https://github.com/Harshilkothiya/IPL-win-probability",
-    title: "IPL win probability",
-  },
+  // {
+  //   image:carrer_guide,
+  //   description:
+  //     "An AI-powered career guidance system that provides personalized career paths, skill gap analysis, and learning recommendations based on user aspirations and abilities.",
+  //   link: "https://github.com/parthmodhvadiya/career_guide_system",
+  //   title: "career_guide_system",
+  // }
   ,
   {
     image:hotel1,
-    description: "A MERN stack project for Hotel Booking.",
+    description: "A MERN stack project for Hotel Booking in Internship.",
     link: "https://github.com/Harshilkothiya/My-Hotel",
     title: "Hotel Bookling App",
-  },
-  {
-    image:sport,
-    description: "Classify the celebrities based on face.",
-    link: "https://github.com/Harshilkothiya/Sports-Celebrity-Image-Classification",
-    title: "Sports Celebrity Image Classification",
   },
   {
     image:datavis,
     description:
       "Data visualization of Road accident and crime in india on Power BI.",
-    link: "https://github.com/Harshilkothiya/Data-visualization",
+    link: "https://github.com/parthmodhvadiya/data-visualization",
     title: "Data visualization",
   },
-  {
-    image:bangalore,
-    description:
-      " A machine learning model to estimate property prices based on location and features.",
-    link: "https://github.com/Harshilkothiya/Bangalore-Home-Price-Prediction",
-    title: "Bangalore Home Price Prediction",
-  }
+  // {
+  //   image:movie_reco,
+  //   description:
+  //     "Movies_IMDB is a content-based movie recommendation system that uses movie overviews and metadata to suggest personalized film recommendations, leveraging techniques like TF-IDF, cosine similarity, and genre-based filtering for accurate results.",
+  //   link: "https://github.com/parthmodhvadiya/Movies_IMDB",
+  //   title: "Bangalore Home Price Prediction",
+  // }
   
 ];
 
